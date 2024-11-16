@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "https://github.com/junshenlye/NutriCal.git",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
