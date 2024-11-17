@@ -7,10 +7,10 @@ export const meta: MetaFunction = () => {
       { name: "NutriCal", content: "Welcome to NutriCal!" },
     ];
   };
-export default function dashboard(){
+export default function signup(){
     return(
         <div>
-            <p>Dashboard</p>
+            <p>signuppage</p>
         </div>
     )
 }

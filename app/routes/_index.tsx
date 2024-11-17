@@ -21,7 +21,7 @@ export default function Index() {
           style={imgStyle}
         />
         NutriCal</div>
-      <Link to="/dashboard">
+      <Link to="/login">
         <button style={buttonStyle}>Login</button>
       </Link>
     </header>
@@ -42,7 +42,7 @@ const pStyle = {
 const bodyStyle = {
   backgroundColor: "#FFFFFF",
   display: "flex",
-  height: "80vh"
+  height: "90vh"
 }
 
 const imgStyle = {
@@ -56,7 +56,7 @@ const divStyle = {
 
 const headerStyle = {
   display: "flex",
-  height: "20vh",
+  height: "10vh",
   justifyContent: "space-between",
   alignItems: "center",
   padding: "1rem 2rem",
@@ -64,9 +64,11 @@ const headerStyle = {
 };
 
 const brandStyle = {
-  fontSize: "1.5rem",
+  fontSize: "1.4rem",
   fontWeight: "bold",
-  color: "black"
+  color: "black",
+  display: "flex",
+  justifyContent: "space-around",
 };
 
 const buttonStyle = {

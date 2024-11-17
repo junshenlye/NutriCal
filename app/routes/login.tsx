@@ -7,10 +7,17 @@ export const meta: MetaFunction = () => {
       { name: "NutriCal", content: "Welcome to NutriCal!" },
     ];
   };
-export default function dashboard(){
+export default function login(){
     return(
         <div>
-            <p>Dashboard</p>
+            <p>loginpage</p>
         </div>
     )
+}
+
+// Add Style here
+
+const pageStye = {
+    backgroundColor: "white",
+    
 }
