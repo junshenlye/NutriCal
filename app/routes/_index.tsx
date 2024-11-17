@@ -61,6 +61,7 @@ const headerStyle = {
   alignItems: "center",
   padding: "1rem 2rem",
   backgroundColor: "#FFFFFF",
+  borderBottom: "1px solid #E5E8EB",
 };
 
 const brandStyle = {
