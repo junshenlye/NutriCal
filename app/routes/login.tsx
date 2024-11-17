@@ -1,4 +1,4 @@
-import { Link, Outlet, useLoaderData } from "@remix-run/react";
+import { Link, Outlet, useLoaderData, Form } from "@remix-run/react";
 import type { MetaFunction } from "@remix-run/node";
 
 export const meta: MetaFunction = () => {
@@ -9,15 +9,29 @@ export const meta: MetaFunction = () => {
   };
 export default function login(){
     return(
-        <div>
-            <p>loginpage</p>
+        <div style={container}>
+            <div style={headerContainer}>
+                <h1 style={header}>Login Page</h1>
+            </div>
         </div>
     )
 }
 
 // Add Style here
-
-const pageStye = {
+const container = {
+    height: "100vh",
     backgroundColor: "white",
-    
+}
+
+const header = {
+    color: "black",
+    fontWeight: "bold",
+    fontSize: "regular",
+}
+
+const headerContainer = {
+    height: "20vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
 }
