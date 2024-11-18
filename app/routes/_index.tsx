@@ -42,7 +42,7 @@ const pStyle = {
 const bodyStyle = {
   backgroundColor: "#FFFFFF",
   display: "flex",
-  height: "90vh"
+  height: "80vh"
 }
 
 const imgStyle = {

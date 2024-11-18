@@ -1,19 +1,20 @@
 import { Link, Outlet, useLoaderData } from "@remix-run/react";
 import type { MetaFunction } from "@remix-run/node";
 import { Form, useActionData} from "@remix-run/react";
-import { redirect } from "@remix-run/node"; // Redirect user after successful login
-import type { ActionArgs } from "@remix-run/node";
+import { redirect, ActionFunctionArgs } from "@remix-run/node"; // Redirect user after successful login
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "app/util/firebase.js"
+import { Header } from "../src/component/Header"
 
 type ActionData = {
   error?: string;
 };
 
-export const action = async ({ request }: ActionArgs) => {
+export const action = async ({ request }: ActionFunctionArgs) => {
   const formData = await request.formData();
   const email = formData.get("email") as string;
   const password = formData.get("password") as string;
+  //Util Authetication Helper
 
   try {
     // Use the `auth` object from your util file
@@ -38,6 +39,7 @@ export default function signup(){
 
   return (
     <div>
+      <Header></Header>
       <h1>Sign Up</h1>
       <Form method="post">
         <label>
